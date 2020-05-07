@@ -1,0 +1,9 @@
+
+
+/* Fixed Header and Navigation */
+.header {
+        width: 100%;
+        height: 64px;
+        display: flex;
+        position: fixed;
+        }
