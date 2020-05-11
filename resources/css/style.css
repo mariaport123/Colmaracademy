@@ -95,6 +95,17 @@ p {
     .courses h1 {
         text-align: center;
       }
+
+    /* Thesis section */
+    .thesis {
+        width: 100%;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .thesis h1 {
+        text-align: center;
+    }
 /* Patterns */
 button {
     height: 4rem;
@@ -269,5 +280,36 @@ button {
   }
   .course .description {
     padding: 0 1rem;
+  }
+  /* Thesis section */
+  .thesis_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   }
+   .thesis_content .section {
+    padding-top: 0;
+  }
+  .thesis_content .featured .pic {
+    width: 100%;
+  }
+  .thesis_content .section .pic video {
+    width: 100%;
+  }
+  .thesis_content .others .thesis-pic {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .thesis_content .others .thesis-pic .pic {
+    width: 35%;
+  }
+  .thesis_content .others .thesis-pic .pic img {
+    width: 100%;
+    height: auto;
+  }
+  .thesis_content .description h1 {
+      text-align: left; 
   }
 }
