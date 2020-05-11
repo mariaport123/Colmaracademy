@@ -9,6 +9,10 @@ body {
     display: flex;
     flex-direction: column; 
 }
+main {
+    position: relative;
+    top: 4rem; 
+}
 
 /* Both devices styling */
 
@@ -50,14 +54,41 @@ h2 {
     line-height: 1.4rem;
     font-weight: 600;
 }
+p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
 
 /*sections*/
-.banner {
-    background-color: #d8d8d8;
-    width: 100%;
-    display: flex;
-}
+    /*banner section*/
+    .banner {
+        background-color: #d8d8d8;
+        width: 100%;
+        display: flex;
+    }
 
+    /* practice section */
+    .practice {
+        display: flex;
+    }
+    .practice-pic {
+        width: 100%; 
+    }
+    .practice .others {
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
+    .practice a {
+        color: #28BFB2; 
+    }
+    /* Learning section*/
+    .courses {
+        display:flex; 
+        flex-direction: column; 
+    }
+    .courses h1 {
+        text-align: center;
+      }
 /* Patterns */
 button {
     height: 4rem;
@@ -67,6 +98,12 @@ button {
     font-size: 1.2rem;
     flex-shrink: 1;
     border-radius: 2px;
+}
+.light {
+    background-color: white; 
+}
+.dark {
+    background-color: #d8d8d8;
 }
  
 /* DESKTOP styling*/
@@ -126,6 +163,23 @@ button {
         flex-grow: 1;
         flex-shrink: 1;
     }
+    .practice-pic .pic {
+        width: 35%;
+        padding: 1rem;
+    }
+    
+    .practice-pic .description {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .practice-pic .description h2 {
+        line-height: normal;
+        margin: 0;
+      }
+
 
   /*main*/
    main {
@@ -157,6 +211,31 @@ button {
         flex-direction:column;
         justify-content: center; 
     }
-
- 
+  /* practice section*/
+  .practice {
+      flex-direction: row; 
+  }
+  .practice .section .pic img {
+      width: 100%;
+      height: auto; 
+  }
+  .practice .others {
+      display: flex;
+      flex-direction: column;
+  }
+  .practice .others .practice-pic {
+      display:flex;
+      flex-direction: row; 
+  }
+  .practice .others .practice-pic .pic {
+      width: 35%; 
+  }
+  .practice .others .practice-pic .pic img {
+      width: 100%;
+      height: auto; 
+  }
+ /*learning section*/
+ .courses {
+     background-color: #DCDCDC;
+ }
 }
