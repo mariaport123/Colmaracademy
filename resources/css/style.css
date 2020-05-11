@@ -54,6 +54,12 @@ h2 {
     line-height: 1.4rem;
     font-weight: 600;
 }
+h3 {
+    font-size: 1rem;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
 p {
     font-size: 1rem;
     line-height: 1.2rem;
@@ -237,5 +243,31 @@ button {
  /*learning section*/
  .courses {
      background-color: #DCDCDC;
+     padding: 2rem 3.5rem;
  }
+ .courses .course {
+     width: 30%; 
+     background-color: white;
+     flex-grow: 1;
+     flex-shrink: 1; 
+     margin: 0 1rem; 
+ }
+ .courses .first-row,
+ .courses .second-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .courses .first-row {
+    margin-bottom: 2rem;
+  }
+  .courses .course .pic {
+    width: 100%;
+  }
+
+  .courses .course .pic img {
+    width: 100%;
+  }
+  .course .description {
+    padding: 0 1rem;
+  }
 }
