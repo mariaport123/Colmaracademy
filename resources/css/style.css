@@ -1,6 +1,8 @@
 /* Overall styling */
 body {
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #303030;
     line-height: 0; 
     margin: 0;
     padding: 0; 
@@ -12,6 +14,7 @@ body {
 
 /*Layout */
 header {
+    background-color: #ffffff;
     height: 4rem; 
     width: 100%;
     position: fixed;
@@ -26,19 +29,48 @@ a {
     text-decoration: none;
     color: #303030;
     line-height: 1rem;
-  }
+}
 
-  ul {
+ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     line-height: 1rem;
-  }
+}
 
+/* Text styles */
+h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 900;
+}
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+}
+
+/*sections*/
+.banner {
+    background-color: #d8d8d8;
+    width: 100%;
+    display: flex;
+}
+
+/* Patterns */
+button {
+    height: 4rem;
+    background-color: #303030;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    flex-shrink: 1;
+    border-radius: 2px;
+}
  
- 
-  /* Desktop */
+/* DESKTOP styling*/
+
 @media only screen and (min-width: 801px) {
 
     .mobile {
@@ -80,4 +112,51 @@ a {
       margin-left: 1rem;
       font-size: 1rem;
     }
+
+  /* Left and right layout patterns*/
+  .left {
+        width: 60%;
+        padding: 2rem 1.5rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+  .right {
+        width: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+  /*main*/
+   main {
+        position: relative;
+        top: 4rem;
+    }
+
+  /* sections */
+
+  /*banner*/
+  .banner .pic img{
+    width: 100%;
+    
+    
+    }
+  .banner h1 {
+       
+      font-size: 3rem;
+      line-height: 3rem; 
+      
+    }
+    .banner h2 {
+        margin-bottom: 3rem; 
+        
+    }
+  .banner .description {
+    margin-left: 1.5rem; 
+        display: flex;
+        flex-direction:column;
+        justify-content: center; 
+    }
+
+ 
 }
