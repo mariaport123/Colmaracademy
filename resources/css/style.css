@@ -1,4 +1,6 @@
 /* Overall styling */
+
+ 
 body {
     background-color: #ffffff;
     font-size: 16px;
@@ -73,7 +75,7 @@ h3 {
   }
 p {
     font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 1rem;
     opacity: 0.8;
   }
 
@@ -119,6 +121,8 @@ p {
         text-align: center;
         font-weight: light;
     }
+  
+    
 /* Patterns */
 button {
     height: 4rem;
@@ -304,6 +308,10 @@ button {
    }
    .thesis_content .section {
     padding-top: 0;
+  }
+  .thesis_content .section .description p{
+      margin-top: -2rem;
+
   }
   .thesis_content .others {
       margin-right: 0.3rem; 
