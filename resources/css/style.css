@@ -262,7 +262,7 @@ button {
       width: 100%;
       height: auto; 
   }
- /*learning section*/
+ /* Start learning section */
  .courses {
      background-color: #DCDCDC;
      padding: 2rem 3.5rem;
@@ -291,6 +291,10 @@ button {
   }
   .course .description {
     padding: 0 1rem;
+  }
+  .courses h1 {
+      margin: 2rem;
+      
   }
   /* Thesis section */
   .thesis_content {
@@ -329,13 +333,11 @@ button {
   }
   .thesis .description {
       margin-left: 1rem; 
-      margin-right: 1rem; 
+      margin-right: 1rem;     
   }
   .thesis h1 {
-    padding: 2rem 0; 
-    
+    padding: 2rem 0;   
 }
-
    /* Footer */
    footer {
     flex-direction: row;
@@ -347,5 +349,133 @@ button {
     margin-left: 1rem;
     font-size: 1rem;
   }
-  
 }
+
+/* Mobile */
+@media only screen and (max-width: 800px) {
+    .desktop {
+      display: none;
+    }
+  /* Patterns */
+  button {
+      width: 100%;
+  }
+  .dark {
+      background-color: white;
+  }
+
+  /* Text styles */
+  
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  h2 {
+      line-height: 1.6rem; 
+  }
+
+  /* Header */
+  nav {
+      display:flex; 
+      flex-direction: row;
+      align-items: center; 
+      margin: 0 1.5rem;
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  /* Footer */
+  footer {
+      padding-top: 2.5rem;
+  }
+
+  footer .links {
+      display: none;
+  }
+
+  /* Sections */
+    /* Banner section */
+
+    .banner {
+        flex-direction: column;
+        padding-bottom: 2rem;
+      }
+    
+      .banner .pic {
+        width: 100%;
+      }
+    
+      .banner .pic img {
+        width: 100%;
+      }
+      .banner .description {
+          padding: 0 1rem; 
+      }
+    
+    /* Practice section */
+      .practice .section {
+        display: none;
+      }
+    
+      .practice .others {
+        padding: 1rem 1rem 2rem 1rem;
+        width: 100%;
+      }
+    
+      .practice .others .light {
+        margin-bottom: 4rem;
+      }
+    
+      .practice .others .description_pic .pic {
+        width: 100%;
+      }
+    
+      .practice .others .description_pic .pic img {
+        width: 100%;
+      }
+
+      /* Learning section */
+      .courses {
+          margin-bottom: 1.5rem;
+      }
+      .courses .first-row,
+      .courses .second-row {
+          display: flex;
+          flex-direction: column;
+      }
+      .courses .pic {
+          display: none; 
+      }
+      .courses .description {
+          background-color: #DCDCDC;
+          padding: 1rem 1rem 1.5rem 1rem;
+          margin: 0 1rem 0.5rem 1rem;
+      }
+      .courses p {
+          display: none;
+      }
+      .courses h3 {
+          display: none;
+      }
+     /* Thesis section */ 
+     .thesis .others {
+         display: none; 
+     }
+     .thesis video {
+         width: 100%; 
+         margin-bottom: 1rem; 
+     }
+     .thesis .thesis_content {
+         width: 100%;
+     }
+     .thesis .description {
+         display: none; 
+     }
+
+
+     
+          
+          
+      
+
+} 
